@@ -29,7 +29,6 @@ app.use("/api/orders", orderRoutes)
 app.use("/api/auth", userRoutes)
 app.use("/api/admin", adminRoutes)
 
-// JiyVHTSaC3AQKCzW
 async function main() {
   await mongoose.connect(process.env.DB_URL);
   app.use("/", (req, res) => {
